@@ -1,3 +1,2 @@
 This is my first file
 Auto push
-New push
