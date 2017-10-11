@@ -1,2 +1,2 @@
 # Jenkins_Integration
-Testing Git and JIRA Integration
+Testing Git JIRA and Jenkins Integration
