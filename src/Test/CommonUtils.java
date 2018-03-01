@@ -16,8 +16,9 @@ import org.apache.commons.lang3.StringUtils;
 public class CommonUtils {
 
 	// private final static Logger logger = Logger.getLogger(CommonUtils.class);
-	private static final String CONFIG_PROPERTY_FILE_PATH = "D:\\CC_QA\\src\\config.properties";
+	//private static final String CONFIG_PROPERTY_FILE_PATH = "D:\\CC_QA\\src\\config.properties";
 //	private static final String CONFIG_PROPERTY_FILE_PATH = ".src/config.properties";
+    private static final String CONFIG_PROPERTY_FILE_PATH = new File("src/config.properties").getAbsolutePath();
 
 	
 	public static String currentDateFileName(String prefix) {
