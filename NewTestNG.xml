@@ -18,7 +18,7 @@
    <parameter name="url" value="https://qalive.circuitcity.com/ " />
    <parameter name="Module" value="shoppingCart" /> -->
    
-   <parameter name="browser" value="Chrome"/>  
+   <parameter name="browser" value="FF"/>  
    <parameter name="url" value="https://qalive.circuitcity.com/" />
    <parameter name="Module" value="Modules" />
    
