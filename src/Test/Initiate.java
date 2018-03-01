@@ -106,9 +106,9 @@ public class Initiate {
 			else if("CheckoutFlow".equalsIgnoreCase(Module)){
 				chkCheckoutFlow();
 			}
-			else if("Promotions".equalsIgnoreCase(Module)){
+			/*else if("Promotions".equalsIgnoreCase(Module)){
 				chkPromotions();
-			}
+			}*/
 			else if("Modules".equalsIgnoreCase(Module)){
 				checkRegistration();
 				chkSignIn();
@@ -120,7 +120,7 @@ public class Initiate {
 				
 				chkshoppingCart();
 				chkCheckoutFlow();
-				chkPromotions();
+			//	chkPromotions();
 				chksavedPaymentMehods();
 			}
 			
@@ -142,15 +142,15 @@ public class Initiate {
 				chksavedPaymentMehods();
 				chkshoppingCart();
 				chkplpModule();
-				chkPromotions();
+				//chkPromotions();
 			}	
 		}
 	}
-	public void chkPromotions()throws Exception
+	/*public void chkPromotions()throws Exception
 	{
 		Promotions sc=new Promotions();
 		sc.executeAll();
-	}
+	}*/
 	public void chkCheckoutFlow()throws Exception
 	{
 		CheckoutFlow sc=new CheckoutFlow();
