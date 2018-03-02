@@ -39,9 +39,9 @@ public class Report {
 	private static ExtentTest test;
 	private static ExtentHtmlReporter htmlReporter;
 		
-	private static String filePath = "C:\\CI_CD_CT\\CC_QA\\QA_Testing.html";
+	private static String filePath = "F:\\Work\\Jenkins_GIT\\cc_qa\\test-output\\QA_Testing.html";
 	public static WebDriver browser = BrowserFactory.getBrowser("browser","URL");
-	static String imagePath="C:\\CI_CD_CT\\CC_QA\\Screenshots\\";
+	static String imagePath="F:\\Work\\Jenkins_GIT\\cc_qa\\Screenshots\\";
 	
 		
 	private static long counter =0;
