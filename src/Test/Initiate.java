@@ -111,7 +111,7 @@ public class Initiate {
 			}*/
 			else if("Modules".equalsIgnoreCase(Module)){
 				checkRegistration();
-				//chkSignIn();
+				chkSignIn();
 				chkSearch();
 		      	chkAddress_Book();
 				chkPersonalInfo();
