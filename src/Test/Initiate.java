@@ -106,13 +106,17 @@ public class Initiate {
 			else if("CheckoutFlow".equalsIgnoreCase(Module)){
 				chkCheckoutFlow();
 			}
-			/*else if("Promotions".equalsIgnoreCase(Module)){
+			else if("Promotions".equalsIgnoreCase(Module)){
 				chkPromotions();
-			}*/
+			}
+			else if("productComparison".equalsIgnoreCase(Module)){
+				chkproductComparison();
+			}
 			else if("Modules".equalsIgnoreCase(Module)){
 				checkRegistration();
 				chkSignIn();
 				chkSearch();
+				chkproductComparison();
 		      	chkAddress_Book();
 				chkPersonalInfo();
 //				chkchangePassword(); no access to write in notepad line no 549
@@ -120,7 +124,7 @@ public class Initiate {
 				
 				chkshoppingCart();
 				chkCheckoutFlow();
-			//	chkPromotions();
+				chkPromotions();
 				chksavedPaymentMehods();
 			}
 			
@@ -142,15 +146,20 @@ public class Initiate {
 				chksavedPaymentMehods();
 				chkshoppingCart();
 				chkplpModule();
-				//chkPromotions();
+				chkPromotions();
 			}	
 		}
 	}
-	/*public void chkPromotions()throws Exception
+	public void chkproductComparison()throws Exception
+	{
+		productComparison sc=new productComparison();
+		sc.executeAll();
+	}
+	public void chkPromotions()throws Exception
 	{
 		Promotions sc=new Promotions();
 		sc.executeAll();
-	}*/
+	}
 	public void chkCheckoutFlow()throws Exception
 	{
 		CheckoutFlow sc=new CheckoutFlow();
