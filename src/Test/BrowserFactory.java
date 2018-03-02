@@ -86,8 +86,8 @@ public class BrowserFactory {
 		} else {
 			extent = Report.GetExtent();
 			//System.setProperty("browser.gecko.driver", System.getProperty("user.dir")+"/geckodriver.exe");
-			//System.setProperty("webdriver.gecko.driver", "C:\\CI_CD_CT\\Browser_Executables\\geckodriver.exe");
-			System.setProperty("webdriver.gecko.driver", ".//geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\CI_CD_CT\\Browser_Executables\\geckodriver.exe");
+			//System.setProperty("webdriver.gecko.driver", ".//geckodriver.exe");
 			DesiredCapabilities dc = new DesiredCapabilities();
 			dc.setAcceptInsecureCerts(true);
 		    browser  = new FirefoxDriver(dc);	
