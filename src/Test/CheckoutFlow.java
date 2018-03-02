@@ -187,6 +187,8 @@ public class CheckoutFlow extends Browser
 	         String path = rpt.CaptureScreen(browser, "InvalidMessage");
 	         rpt.imgPathFail(path);
 		}
+		Thread.sleep(2000);
+		click("id=change");
 		//invalid address
 		 sendKeys("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_firstName_1",name);
 			Thread.sleep(3000);
@@ -288,7 +290,7 @@ public class CheckoutFlow extends Browser
 		               rpt.imgPathFail(path);
 		        }
 		       }
-			//paypal checkout
+			
 		       Thread.sleep(5000);
 		       //click("xpath=/html/body/div");
 		       Thread.sleep(3000);
@@ -468,23 +470,33 @@ public class CheckoutFlow extends Browser
 	         String path = rpt.CaptureScreen(browser, "InvalidMessage");
 	         rpt.imgPathFail(path);
 		}
+		Thread.sleep(2000);
+		click("id=change");
 		//invalid address
+		findTheElement("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_firstName_1").clear();
 		 sendKeys("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_firstName_1",name);
 			Thread.sleep(3000);
+			findTheElement("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_lastName_1").clear();
 			sendKeys("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_lastName_1",name);
 			Thread.sleep(3000);
+			findTheElement("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_address1_1").clear();
 			sendKeys("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_address1_1","Qr 88, B.H.Area Kadma");
 			Thread.sleep(3000);
 			click("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_lastName_1");
 			Thread.sleep(3000);
+			findTheElement("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_city_1").clear();
 			sendKeys("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_city_1","Jamshedpur");
 			Thread.sleep(3000);
+			findTheElement("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_state_1").clear();
 			sendKeys("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_state_1","Jharkhand");
 			Thread.sleep(3000);
+			findTheElement("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_zipCode_1").clear();
 			sendKeys("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_zipCode_1","831005");
 			Thread.sleep(2000);
+			findTheElement("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_email1_1").clear();
 			sendKeys("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_email1_1",emailid);
 			Thread.sleep(2000);
+			findTheElement("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_phone1_1").clear();
 			sendKeys("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_phone1_1",phoneNo);
 			Thread.sleep(2000);
 			click("id=summaryButton"); //continue
@@ -569,7 +581,7 @@ public class CheckoutFlow extends Browser
 		               rpt.imgPathFail(path);
 		        }
 		       }
-			//paypal checkout
+			
 		       Thread.sleep(5000);
 		       //click("xpath=/html/body/div");
 		       Thread.sleep(3000);
