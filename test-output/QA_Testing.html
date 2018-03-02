@@ -32,6 +32,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -45,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Mar 1, 2018 04:18:45 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Mar 2, 2018 09:16:22 PM</span>
 				</a>
 			</li>
 			<li>
@@ -71,6 +72,9 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='error'><a href='#!'>Error <i class='material-icons red-text lighten-2'>error</i></a></li>
+						<li status='warning'><a href='#!'>Warning <i class='material-icons orange-text'>warning</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -84,7 +88,38 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>CIRCUIT_CITY:Regression</a></li>
-					<li><a href='#'>CIRCUITCITY-PROMOTIONS</a></li>
+					<li><a href='#'>CC_Registration_ValidationFields</a></li>
+					<li><a href='#'>CC_Registration-InvalidEmailId</a></li>
+					<li><a href='#'>CC_Registration-InvalidPassword</a></li>
+					<li><a href='#'>CC_Registration-InvalidConfirmPassword</a></li>
+					<li><a href='#'>CC-Registration-RegistrationSuccess</a></li>
+					<li><a href='#'>CC_Registration_VerifyLogin</a></li>
+					<li><a href='#'>CC_SignIn&ForgotPassword-VerifySignIn</a></li>
+					<li><a href='#'>CC_SignIn&ForgotPassword-VerifyEmail</a></li>
+					<li><a href='#'>CC_SignIn&ForgotPassword-VerifyPassword</a></li>
+					<li><a href='#'>CC_SignIn-VerifyPassword</a></li>
+					<li><a href='#'>CC_SignIn&ForgotPassword-VerifyForgotPasswordLink</a></li>
+					<li><a href='#'>CC_SignIn&ForgotPassword-VerifyForgotPassword</a></li>
+					<li><a href='#'>CC_Search-VerifySearchProduct</a></li>
+					<li><a href='#'>CC_Search-VerifyNOSearchProduct</a></li>
+					<li><a href='#'>CC_Search-VerifyAlreadySearchedProduct</a></li>
+					<li><a href='#'>CC_Search-VerifySearchWithProductName</a></li>
+					<li><a href='#'>CC_Search-VerifySearchWithItemNo</a></li>
+					<li><a href='#'>CC_Search-VerifySearchWithKeyword</a></li>
+					<li><a href='#'>CC_Search-VerifySearchWithDescription</a></li>
+					<li><a href='#'>CC_Search-VerifySearchWithCategoryName</a></li>
+					<li><a href='#'>CC_Search-VerifySearchWithRelevance</a></li>
+					<li><a href='#'>CC_Search-VerifySearchResultPage</a></li>
+					<li><a href='#'>CC_Search-VerifySearchSearchWithInvalidInput</a></li>
+					<li><a href='#'>CC_Search-VerifySearchSearchWithInvalidInput-SpecialCharacter</a></li>
+					<li><a href='#'>CC_Search-VerifyConfinedSearch</a></li>
+					<li><a href='#'>CC_Search-VerifySpellChecker</a></li>
+					<li><a href='#'>CC_Search-VerifyCategoryPage</a></li>
+					<li><a href='#'>CC_Search-VerifyTypeAhead</a></li>
+					<li><a href='#'>CC_Search-VerifySortingSearch</a></li>
+					<li><a href='#'>CC_Search-VerifyItemsPerPage</a></li>
+					<li><a href='#'>CC_ProductComparison-VerifyProduct</a></li>
+					<li><a href='#'>CC_ProductComparison-VerifyCustomerView</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -132,10 +167,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='95.161%'><span class='strong'>59</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='4.839%'>3</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -147,10 +182,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>11</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='92.913%'><span class='strong'>118</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='3.937%'>5</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='3.15%'>4</span> others
 				</div>
 			</div>
 		</div>
@@ -168,14 +203,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>CIRCUIT CITY</span>
-						<span class='test-time'>Mar 1, 2018 04:18:45 PM</span>
+						<span class='test-time'>Mar 2, 2018 09:16:22 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2018 04:18:45 PM</span>
-	<span class='label end-time'>Mar 1, 2018 04:19:15 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 29s+657ms</span>
+	<span class='label start-time'>Mar 2, 2018 09:16:22 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:16:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+603ms</span>
 </div>
 	<div class='test-desc'>Verify HomePage </div>
 	<div class='test-attributes'>
@@ -196,12 +231,12 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:19:15 PM</td>
+					<td class='timestamp'>9:16:54 PM</td>
 					<td class='step-details'>Browser that is passed as parameter from Jenkins is :FF</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:19:15 PM</td>
+					<td class='timestamp'>9:16:54 PM</td>
 					<td class='step-details'>URL that is passed as parameter from Jenkins is :https://qalive.circuitcity.com/</td>
 				</tr>
 			</tbody>
@@ -214,14 +249,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>Checking Application Title - HomePage</span>
-						<span class='test-time'>Mar 1, 2018 04:19:15 PM</span>
+						<span class='test-time'>Mar 2, 2018 09:16:54 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2018 04:19:15 PM</span>
-	<span class='label end-time'>Mar 1, 2018 04:19:15 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+15ms</span>
+	<span class='label start-time'>Mar 2, 2018 09:16:54 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:16:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+8ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -235,7 +270,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:19:15 PM</td>
+					<td class='timestamp'>9:16:54 PM</td>
 					<td class='step-details'>Application Title :CircuitCity Electronics, Camera, Video, Photo, Appliances, Accessories is Matching</td>
 				</tr>
 			</tbody>
@@ -247,23 +282,24 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>CIRCUIT CITY - PROMOTIONS</span>
-						<span class='test-time'>Mar 1, 2018 04:19:43 PM</span>
+						<span class='test-name'>CC-Registration-Field Validation</span>
+						<span class='test-time'>Mar 2, 2018 09:17:02 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2018 04:19:43 PM</span>
-	<span class='label end-time'>Mar 1, 2018 04:19:43 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+297ms</span>
+	<span class='label start-time'>Mar 2, 2018 09:17:02 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:17:02 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+171ms</span>
 </div>
-	<div class='test-desc'>Original Price and Selling Price is displayed : $19.99 Our Price
-$24.99
- Original Price </div>
+	<div class='test-desc'>Field :Create Account Displayed - For Field Validation </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
-				<span class='category label white-text'>CIRCUITCITY-PROMOTIONS</span>
+				<span class='category label white-text'>CC_Registration_ValidationFields</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>CommonUtils.getUserName()</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -278,15 +314,13 @@ $24.99
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:19:43 PM</td>
-					<td class='step-details'>Original Price and Selling Price is displayed : $19.99 Our Price
-$24.99
- Original Price</td>
+					<td class='timestamp'>9:17:02 PM</td>
+					<td class='step-details'>Field :Create Account Displayed - For Field Validation</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:19:43 PM</td>
-					<td class='step-details'>ScreenShot<img data-featherlight='D:\CC_QA\Screenshots\ValidMessage1.png' width='10%' src='D:\CC_QA\Screenshots\ValidMessage1.png' data-src='D:\CC_QA\Screenshots\ValidMessage1.png'></td>
+					<td class='timestamp'>9:17:02 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage1.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage1.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage1.png'></td>
 				</tr>
 			</tbody>
 		</table>
@@ -297,21 +331,24 @@ $24.99
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>CIRCUIT CITY - PROMOTIONS</span>
-						<span class='test-time'>Mar 1, 2018 04:19:54 PM</span>
+						<span class='test-name'>CC-Registration-Field Validation</span>
+						<span class='test-time'>Mar 2, 2018 09:17:03 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2018 04:19:54 PM</span>
-	<span class='label end-time'>Mar 1, 2018 04:19:54 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+121ms</span>
+	<span class='label start-time'>Mar 2, 2018 09:17:03 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:17:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+116ms</span>
 </div>
-	<div class='test-desc'>Qualify for free shipping is displayed : Qualify For FREE Shipping if you add $15.01 </div>
+	<div class='test-desc'>Field :Confirm Password Displayed - For Field Validation </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
-				<span class='category label white-text'>CIRCUITCITY-PROMOTIONS</span>
+				<span class='category label white-text'>CC_Registration_ValidationFields</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>CommonUtils.getUserName()</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -326,13 +363,13 @@ $24.99
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:19:54 PM</td>
-					<td class='step-details'>Qualify for free shipping is displayed : Qualify For FREE Shipping if you add $15.01</td>
+					<td class='timestamp'>9:17:03 PM</td>
+					<td class='step-details'>Field :Confirm Password Displayed - For Field Validation</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:19:54 PM</td>
-					<td class='step-details'>ScreenShot<img data-featherlight='D:\CC_QA\Screenshots\ValidMessage2.png' width='10%' src='D:\CC_QA\Screenshots\ValidMessage2.png' data-src='D:\CC_QA\Screenshots\ValidMessage2.png'></td>
+					<td class='timestamp'>9:17:03 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage2.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage2.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage2.png'></td>
 				</tr>
 			</tbody>
 		</table>
@@ -343,21 +380,24 @@ $24.99
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>CIRCUIT CITY - PROMOTIONS</span>
-						<span class='test-time'>Mar 1, 2018 04:19:57 PM</span>
+						<span class='test-name'>CC-Registration-Field Validation</span>
+						<span class='test-time'>Mar 2, 2018 09:17:03 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2018 04:19:57 PM</span>
-	<span class='label end-time'>Mar 1, 2018 04:19:57 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+107ms</span>
+	<span class='label start-time'>Mar 2, 2018 09:17:03 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:17:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+121ms</span>
 </div>
-	<div class='test-desc'>Promo code applied : 10PERCOFF </div>
+	<div class='test-desc'>Field :First Name Displayed - For Field Validation </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
-				<span class='category label white-text'>CIRCUITCITY-PROMOTIONS</span>
+				<span class='category label white-text'>CC_Registration_ValidationFields</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>CommonUtils.getUserName()</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -372,13 +412,13 @@ $24.99
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:19:57 PM</td>
-					<td class='step-details'>Promo code applied : 10PERCOFF</td>
+					<td class='timestamp'>9:17:03 PM</td>
+					<td class='step-details'>Field :First Name Displayed - For Field Validation</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:19:57 PM</td>
-					<td class='step-details'>ScreenShot<img data-featherlight='D:\CC_QA\Screenshots\ValidMessage3.png' width='10%' src='D:\CC_QA\Screenshots\ValidMessage3.png' data-src='D:\CC_QA\Screenshots\ValidMessage3.png'></td>
+					<td class='timestamp'>9:17:03 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage3.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage3.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage3.png'></td>
 				</tr>
 			</tbody>
 		</table>
@@ -389,22 +429,24 @@ $24.99
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
-						<span class='test-name'>CIRCUIT CITY - PROMOTIONS</span>
-						<span class='test-time'>Mar 1, 2018 04:20:02 PM</span>
+						<span class='test-name'>CC-Registration-Field Validation</span>
+						<span class='test-time'>Mar 2, 2018 09:17:03 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 1, 2018 04:20:02 PM</span>
-	<span class='label end-time'>Mar 1, 2018 04:20:02 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+136ms</span>
+	<span class='label start-time'>Mar 2, 2018 09:17:03 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:17:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+59ms</span>
 </div>
-	<div class='test-desc'>Savings after adding promo code is displayed : Promo:
--$1.99 </div>
+	<div class='test-desc'>Field :Email id Displayed - For Field Validation </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
-				<span class='category label white-text'>CIRCUITCITY-PROMOTIONS</span>
+				<span class='category label white-text'>CC_Registration_ValidationFields</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>CommonUtils.getUserName()</span>
 			</div>
 	</div>
 	<div class='test-steps'>
@@ -419,14 +461,2615 @@ $24.99
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:20:02 PM</td>
-					<td class='step-details'>Savings after adding promo code is displayed : Promo:
--$1.99</td>
+					<td class='timestamp'>9:17:03 PM</td>
+					<td class='step-details'>Field :Email id Displayed - For Field Validation</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:20:02 PM</td>
-					<td class='step-details'>ScreenShot<img data-featherlight='D:\CC_QA\Screenshots\ValidMessage4.png' width='10%' src='D:\CC_QA\Screenshots\ValidMessage4.png' data-src='D:\CC_QA\Screenshots\ValidMessage4.png'></td>
+					<td class='timestamp'>9:17:03 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage4.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage4.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage4.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-Registration-Field Validation</span>
+						<span class='test-time'>Mar 2, 2018 09:17:03 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:17:03 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:17:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+81ms</span>
+</div>
+	<div class='test-desc'>Field :Last Name Displayed - For Field Validation </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Registration_ValidationFields</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>CommonUtils.getUserName()</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:17:03 PM</td>
+					<td class='step-details'>Field :Last Name Displayed - For Field Validation</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:17:03 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage5.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage5.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage5.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-Registration-Field Validation</span>
+						<span class='test-time'>Mar 2, 2018 09:17:03 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:17:03 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:17:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+126ms</span>
+</div>
+	<div class='test-desc'>Field :Password Displayed - For Field Validation </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Registration_ValidationFields</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>CommonUtils.getUserName()</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:17:03 PM</td>
+					<td class='step-details'>Field :Password Displayed - For Field Validation</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:17:03 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage6.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage6.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage6.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-Registration-Invalid Email Id</span>
+						<span class='test-time'>Mar 2, 2018 09:17:04 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:17:04 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:17:04 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+75ms</span>
+</div>
+	<div class='test-desc'>Message Displayed- For Invalid Email Id - The email entered is not in a valid format. </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Registration-InvalidEmailId</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:17:04 PM</td>
+					<td class='step-details'>Message Displayed- For Invalid Email Id - The email entered is not in a valid format.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:17:04 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage7.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage7.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage7.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-Registration-Invalid Email Id</span>
+						<span class='test-time'>Mar 2, 2018 09:17:04 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:17:04 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:17:04 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+75ms</span>
+</div>
+	<div class='test-desc'>Message Displayed- For Invalid Email Id - The email entered is not in a valid format. </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Registration-InvalidEmailId</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:17:04 PM</td>
+					<td class='step-details'>Message Displayed- For Invalid Email Id - The email entered is not in a valid format.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:17:04 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage8.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage8.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage8.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-Registration-Invalid Password</span>
+						<span class='test-time'>Mar 2, 2018 09:17:06 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:17:06 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:17:06 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+62ms</span>
+</div>
+	<div class='test-desc'>Message Displayed- For Invalid Password - Passwords must be at least 6 characters in length, and include 1 digit(s) and 1 letter(s). </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Registration-InvalidPassword</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:17:06 PM</td>
+					<td class='step-details'>Message Displayed- For Invalid Password - Passwords must be at least 6 characters in length, and include 1 digit(s) and 1 letter(s).</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:17:06 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage9.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage9.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage9.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-Registration-Invalid Password</span>
+						<span class='test-time'>Mar 2, 2018 09:17:06 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:17:06 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:17:06 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+65ms</span>
+</div>
+	<div class='test-desc'>Message Displayed- For Invalid Password - Passwords must be at least 6 characters in length, and include 1 digit(s) and 1 letter(s). </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Registration-InvalidPassword</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:17:06 PM</td>
+					<td class='step-details'>Message Displayed- For Invalid Password - Passwords must be at least 6 characters in length, and include 1 digit(s) and 1 letter(s).</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:17:06 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage10.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage10.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage10.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-Registration-Invalid Confirm Password</span>
+						<span class='test-time'>Mar 2, 2018 09:17:09 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:17:09 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:17:09 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+55ms</span>
+</div>
+	<div class='test-desc'>Message Displayed- For Invalid Confirm Password - The passwords entered do not match. </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Registration-InvalidConfirmPassword</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:17:09 PM</td>
+					<td class='step-details'>Message Displayed- For Invalid Confirm Password - The passwords entered do not match.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:17:09 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage11.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage11.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage11.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-Registration-Invalid Confirm Password</span>
+						<span class='test-time'>Mar 2, 2018 09:17:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:17:11 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:17:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+68ms</span>
+</div>
+	<div class='test-desc'>Message Displayed- For Invalid Confirm Password - The passwords entered do not match. </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Registration-InvalidConfirmPassword</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:17:11 PM</td>
+					<td class='step-details'>Message Displayed- For Invalid Confirm Password - The passwords entered do not match.</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:17:11 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage12.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage12.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage12.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-Registration-Registration Success</span>
+						<span class='test-time'>Mar 2, 2018 09:18:01 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:18:01 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:18:01 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+150ms</span>
+</div>
+	<div class='test-desc'>Registration is successful </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC-Registration-RegistrationSuccess</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:01 PM</td>
+					<td class='step-details'>Registration is successful</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:01 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage13.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage13.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage13.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-SignIn-Verify Login</span>
+						<span class='test-time'>Mar 2, 2018 09:18:45 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:18:45 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:18:45 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+187ms</span>
+</div>
+	<div class='test-desc'>Field :Remember Me is Displayed </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Registration_VerifyLogin</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:45 PM</td>
+					<td class='step-details'>Field :Remember Me is Displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:45 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage14.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage14.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage14.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-SignIn-Verify Login</span>
+						<span class='test-time'>Mar 2, 2018 09:18:45 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:18:45 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:18:46 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+158ms</span>
+</div>
+	<div class='test-desc'>Field :Create Account is Displayed </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Registration_VerifyLogin</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:45 PM</td>
+					<td class='step-details'>Field :Create Account is Displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:46 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage15.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage15.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage15.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-SignIn-Verify Login</span>
+						<span class='test-time'>Mar 2, 2018 09:18:46 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:18:46 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:18:46 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+147ms</span>
+</div>
+	<div class='test-desc'>Field :LogIn Id is Displayed </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Registration_VerifyLogin</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:46 PM</td>
+					<td class='step-details'>Field :LogIn Id is Displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:46 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage16.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage16.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage16.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-SignIn-Verify Login</span>
+						<span class='test-time'>Mar 2, 2018 09:18:46 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:18:46 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:18:46 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+149ms</span>
+</div>
+	<div class='test-desc'>Field :Forgot Password is Displayed </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Registration_VerifyLogin</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:46 PM</td>
+					<td class='step-details'>Field :Forgot Password is Displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:46 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage17.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage17.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage17.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-SignIn-Verify Login</span>
+						<span class='test-time'>Mar 2, 2018 09:18:46 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:18:46 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:18:46 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+159ms</span>
+</div>
+	<div class='test-desc'>Field :SignIn button is Displayed </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Registration_VerifyLogin</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:46 PM</td>
+					<td class='step-details'>Field :SignIn button is Displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:46 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage18.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage18.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage18.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-SignIn-Verify Login</span>
+						<span class='test-time'>Mar 2, 2018 09:18:46 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:18:46 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:18:46 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+145ms</span>
+</div>
+	<div class='test-desc'>Field :Password is Displayed </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Registration_VerifyLogin</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:46 PM</td>
+					<td class='step-details'>Field :Password is Displayed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:46 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage19.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage19.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage19.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - SignIn & Forgot Password - Verify Sign In</span>
+						<span class='test-time'>Mar 2, 2018 09:18:52 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:18:52 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:18:52 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+139ms</span>
+</div>
+	<div class='test-desc'>Sign In Button Displayed - For Verify Sign In </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn&ForgotPassword-VerifySignIn</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:52 PM</td>
+					<td class='step-details'>Sign In Button Displayed - For Verify Sign In</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:52 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage20.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage20.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage20.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - SignIn & Forgot Password - Verify Sign In</span>
+						<span class='test-time'>Mar 2, 2018 09:18:58 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:18:58 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:18:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+145ms</span>
+</div>
+	<div class='test-desc'>User Email Displayed - For Verify Sign In </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn&ForgotPassword-VerifySignIn</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:58 PM</td>
+					<td class='step-details'>User Email Displayed - For Verify Sign In</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:58 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage21.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage21.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage21.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - SignIn & Forgot Password - Verify Sign In</span>
+						<span class='test-time'>Mar 2, 2018 09:18:58 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:18:58 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:18:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+139ms</span>
+</div>
+	<div class='test-desc'>User Password Displayed - For Verify Sign In </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn&ForgotPassword-VerifySignIn</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:58 PM</td>
+					<td class='step-details'>User Password Displayed - For Verify Sign In</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:18:58 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage22.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage22.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage22.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - SignIn & Forgot Password - Verify Sign In</span>
+						<span class='test-time'>Mar 2, 2018 09:19:03 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:19:03 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:19:04 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+145ms</span>
+</div>
+	<div class='test-desc'>Sign In Button Displayed - For Verify Sign In </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn&ForgotPassword-VerifySignIn</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:03 PM</td>
+					<td class='step-details'>Sign In Button Displayed - For Verify Sign In</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:04 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage23.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage23.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage23.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - SignIn & Forgot Password - Verify Sign In</span>
+						<span class='test-time'>Mar 2, 2018 09:19:16 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:19:16 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:19:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+158ms</span>
+</div>
+	<div class='test-desc'>Sign Out Button Displayed - For Verify Sign In </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn&ForgotPassword-VerifySignIn</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:16 PM</td>
+					<td class='step-details'>Sign Out Button Displayed - For Verify Sign In</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:16 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage24.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage24.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage24.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - SignIn & Forgot Password - Verify Email</span>
+						<span class='test-time'>Mar 2, 2018 09:19:45 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:19:45 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:19:45 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+217ms</span>
+</div>
+	<div class='test-desc'>Sign In Button Displayed - For Verify Email </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn&ForgotPassword-VerifyEmail</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:45 PM</td>
+					<td class='step-details'>Sign In Button Displayed - For Verify Email</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:45 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage25.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage25.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage25.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='28'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - SignIn & Forgot Password - Verify Email</span>
+						<span class='test-time'>Mar 2, 2018 09:19:50 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:19:50 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:19:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+165ms</span>
+</div>
+	<div class='test-desc'>User Email Displayed - For Verify Email </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn&ForgotPassword-VerifyEmail</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:50 PM</td>
+					<td class='step-details'>User Email Button Displayed - For Verify Email</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:51 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage26.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage26.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage26.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='29'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - SignIn & Forgot Password - Verify Email</span>
+						<span class='test-time'>Mar 2, 2018 09:19:51 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:19:51 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:19:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+145ms</span>
+</div>
+	<div class='test-desc'>User Password Displayed - For Verify Email </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn&ForgotPassword-VerifyEmail</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:51 PM</td>
+					<td class='step-details'>User Password Button Displayed - For Verify Email</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:19:51 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage27.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage27.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage27.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='30'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-SignIn & Forgot Password - Verify Email</span>
+						<span class='test-time'>Mar 2, 2018 09:19:51 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:19:51 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:19:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+160ms</span>
+</div>
+	<div class='test-desc'>Message NOT Displayed- For Invalid Email Id </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn&ForgotPassword-VerifyEmail</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:19:51 PM</td>
+					<td class='step-details'>Message NOT Displayed- For Invalid Email Id</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>9:19:51 PM</td>
+					<td class='step-details'>Message NOT Displayed- For Invalid Email Id</td>
+				</tr>
+				<tr class='log' status='error'>
+					<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+					<td class='timestamp'>9:19:51 PM</td>
+					<td class='step-details'>Message NOT Displayed- For Invalid Email Id</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:19:51 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\InvalidMessage28.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\InvalidMessage28.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\InvalidMessage28.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - SignIn & Forgot Password - Verify Password</span>
+						<span class='test-time'>Mar 2, 2018 09:20:09 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:20:09 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:20:09 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+146ms</span>
+</div>
+	<div class='test-desc'>Sign In Button Displayed - For Verify Password </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn&ForgotPassword-VerifyPassword</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:09 PM</td>
+					<td class='step-details'>Sign In Button Displayed - For Verify Password</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:09 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage29.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage29.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage29.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='32'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - SignIn & Forgot Password - Verify Password</span>
+						<span class='test-time'>Mar 2, 2018 09:20:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:20:15 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:20:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+88ms</span>
+</div>
+	<div class='test-desc'>User Email Displayed - For Verify Password </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn&ForgotPassword-VerifyPassword</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:15 PM</td>
+					<td class='step-details'>User Email Displayed - For Verify Password</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:15 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage30.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage30.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage30.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='33'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - SignIn & Forgot Password - Verify Password</span>
+						<span class='test-time'>Mar 2, 2018 09:20:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:20:15 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:20:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+127ms</span>
+</div>
+	<div class='test-desc'>User Password Displayed - For Verify Password </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn&ForgotPassword-VerifyPassword</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:15 PM</td>
+					<td class='step-details'>User Password Displayed - For Verify Password</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:15 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage31.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage31.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage31.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='34'>
+					<div class='test-heading'>
+						<span class='test-name'>CC-SignIn-Verify Password</span>
+						<span class='test-time'>Mar 2, 2018 09:20:16 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:20:16 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:20:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+124ms</span>
+</div>
+	<div class='test-desc'>Message NOT Displayed- For Invalid Password </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn-VerifyPassword</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:20:16 PM</td>
+					<td class='step-details'>Message NOT Displayed- For Invalid Password</td>
+				</tr>
+				<tr class='log' status='warning'>
+					<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+					<td class='timestamp'>9:20:16 PM</td>
+					<td class='step-details'>Message NOT Displayed- For Invalid Password</td>
+				</tr>
+				<tr class='log' status='error'>
+					<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+					<td class='timestamp'>9:20:16 PM</td>
+					<td class='step-details'>Message NOT Displayed- For Invalid Password</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:20:16 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\InvalidMessage32.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\InvalidMessage32.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\InvalidMessage32.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='35'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - SignIn & Forgot Password - Verify Forgot Password Link</span>
+						<span class='test-time'>Mar 2, 2018 09:20:33 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:20:33 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:20:33 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+132ms</span>
+</div>
+	<div class='test-desc'>Sign In Button Displayed - For Verify Forgot Password Link </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn&ForgotPassword-VerifyForgotPasswordLink</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:33 PM</td>
+					<td class='step-details'>Sign In Button Displayed - For Verify Forgot Password Link</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:33 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage33.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage33.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage33.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='36'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - SignIn & Forgot Password - Verify Forgot Password Link</span>
+						<span class='test-time'>Mar 2, 2018 09:20:41 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:20:41 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:20:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+54ms</span>
+</div>
+	<div class='test-desc'>Forgot Password Displayed - For Verify Forgot Password Link </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn&ForgotPassword-VerifyForgotPasswordLink</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:41 PM</td>
+					<td class='step-details'>Forgot Password Displayed - For Verify Forgot Password Link</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:41 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage34.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage34.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage34.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='37'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - SignIn & Forgot Password - Verify Forgot Password</span>
+						<span class='test-time'>Mar 2, 2018 09:20:41 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:20:41 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:20:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+43ms</span>
+</div>
+	<div class='test-desc'>Email Text Box Displayed - For Verify Forgot Password </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn&ForgotPassword-VerifyForgotPassword</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:41 PM</td>
+					<td class='step-details'>Email Text Box Displayed - For Verify Forgot Password</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:41 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage35.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage35.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage35.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='38'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - SignIn & Forgot Password - Verify Forgot Password</span>
+						<span class='test-time'>Mar 2, 2018 09:20:44 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:20:44 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:20:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+54ms</span>
+</div>
+	<div class='test-desc'>Submit Button Displayed - For Verify Forgot Password </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_SignIn&ForgotPassword-VerifyForgotPassword</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:44 PM</td>
+					<td class='step-details'>Submit Button Displayed - For Verify Forgot Password</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:44 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage36.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage36.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage36.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='39'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Search Product</span>
+						<span class='test-time'>Mar 2, 2018 09:20:48 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:20:48 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:20:48 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+63ms</span>
+</div>
+	<div class='test-desc'>Product is Displayed - For Verify Search Product </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifySearchProduct</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:48 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Search Product</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:48 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage37.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage37.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage37.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='40'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify NO Search Product</span>
+						<span class='test-time'>Mar 2, 2018 09:20:51 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:20:51 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:20:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+69ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify NO Search Product </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifyNOSearchProduct</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:51 PM</td>
+					<td class='step-details'>Product Displayed - For Verify NO Search Product</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:51 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage38.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage38.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage38.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='41'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Already Searched Product</span>
+						<span class='test-time'>Mar 2, 2018 09:20:55 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:20:55 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:20:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+45ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify Already Searched Product </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifyAlreadySearchedProduct</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:55 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Already Searched Product</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:20:55 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage39.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage39.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage39.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='42'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Search With Product Name</span>
+						<span class='test-time'>Mar 2, 2018 09:21:07 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:21:07 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:21:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+57ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify Search With Product Name </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifySearchWithProductName</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:21:07 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Search With Product Name</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:21:07 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage40.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage40.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage40.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='43'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Search With Item No</span>
+						<span class='test-time'>Mar 2, 2018 09:21:19 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:21:19 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:21:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+65ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify Search With Item No </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifySearchWithItemNo</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:21:19 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Search With Item No</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:21:19 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage41.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage41.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage41.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='44'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Search With Keyword</span>
+						<span class='test-time'>Mar 2, 2018 09:21:33 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:21:33 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:21:33 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+55ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify Search With Keyword </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifySearchWithKeyword</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:21:33 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Search With Keyword</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:21:33 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage42.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage42.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage42.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='45'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Search With Description</span>
+						<span class='test-time'>Mar 2, 2018 09:21:46 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:21:46 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:21:46 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+59ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify Search With Description </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifySearchWithDescription</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:21:46 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Search With Description</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:21:46 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage43.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage43.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage43.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='46'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Search With Category Name</span>
+						<span class='test-time'>Mar 2, 2018 09:21:59 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:21:59 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:21:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+65ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify Search With Category Name </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifySearchWithCategoryName</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:21:59 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Search With Category Name</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:21:59 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage44.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage44.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage44.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='47'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Search With Relevance</span>
+						<span class='test-time'>Mar 2, 2018 09:22:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:22:14 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:22:14 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+62ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify Search With Relevance </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifySearchWithRelevance</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:22:14 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Search With Relevance</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:22:14 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage45.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage45.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage45.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='48'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Search Result Page</span>
+						<span class='test-time'>Mar 2, 2018 09:22:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:22:28 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:22:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+70ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify Search Result Page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifySearchResultPage</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:22:28 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Result Page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:22:28 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage46.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage46.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage46.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='49'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Search With Invalid Input</span>
+						<span class='test-time'>Mar 2, 2018 09:22:32 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:22:32 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:22:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+67ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify Search Search With Invalid Input </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifySearchSearchWithInvalidInput</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:22:32 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Search With Invalid Input</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:22:32 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage47.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage47.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage47.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='50'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Search With Invalid Input - Special Character</span>
+						<span class='test-time'>Mar 2, 2018 09:22:36 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:22:36 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:22:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+75ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify Search Search With Invalid Input - Special Character </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifySearchSearchWithInvalidInput-SpecialCharacter</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:22:36 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Search With Invalid Input - Special Character</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:22:37 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage48.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage48.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage48.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='51'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Confined Search</span>
+						<span class='test-time'>Mar 2, 2018 09:22:51 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:22:51 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:22:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+103ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify Confined Search </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifyConfinedSearch</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:22:51 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Confined Search</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:22:51 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage49.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage49.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage49.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='52'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Spell Checker</span>
+						<span class='test-time'>Mar 2, 2018 09:23:04 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:23:04 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:23:04 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+58ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify Spell Checker </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifySpellChecker</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:23:04 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Spell Checker</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:23:04 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage50.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage50.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage50.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='53'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Category Page</span>
+						<span class='test-time'>Mar 2, 2018 09:23:15 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:23:15 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:23:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+62ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify Category Page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifyCategoryPage</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:23:15 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Category Page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:23:15 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage51.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage51.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage51.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='54'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Type Ahead</span>
+						<span class='test-time'>Mar 2, 2018 09:23:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:23:20 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:23:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+71ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify Type Ahead </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifyTypeAhead</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:23:20 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Type Ahead</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:23:20 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage52.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage52.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage52.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='55'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Sorting Search</span>
+						<span class='test-time'>Mar 2, 2018 09:23:31 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:23:31 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:23:31 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+75ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify Sorting Search </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifySortingSearch</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:23:31 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Sorting Search</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:23:31 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage53.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage53.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage53.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='56'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Search - Verify Items Per Page</span>
+						<span class='test-time'>Mar 2, 2018 09:23:42 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:23:42 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:23:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+67ms</span>
+</div>
+	<div class='test-desc'>Product Displayed - For Verify Items Per Page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_Search-VerifyItemsPerPage</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:23:42 PM</td>
+					<td class='step-details'>Product Displayed - For Verify Items Per Page</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:23:42 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage54.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage54.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage54.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='57'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Product Comparison - Verify Product</span>
+						<span class='test-time'>Mar 2, 2018 09:23:42 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:23:42 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:23:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+61ms</span>
+</div>
+	<div class='test-desc'>Search Text Box is Displayed - For Verify Product </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_ProductComparison-VerifyProduct</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:23:42 PM</td>
+					<td class='step-details'>Search Text Box is Displayed - For Verify Product</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:23:42 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage55.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage55.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage55.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='58'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Product Comparison - Verify Product</span>
+						<span class='test-time'>Mar 2, 2018 09:23:45 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:23:45 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:23:45 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+57ms</span>
+</div>
+	<div class='test-desc'>Searching for Product is Displayed - For Verify Product </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_ProductComparison-VerifyProduct</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:23:45 PM</td>
+					<td class='step-details'>Searching for Product is Displayed - For Verify Product</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:23:45 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage56.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage56.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage56.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='59'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Product Comparison - Verify Product</span>
+						<span class='test-time'>Mar 2, 2018 09:23:50 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:23:50 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:23:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+69ms</span>
+</div>
+	<div class='test-desc'>Selecting Product is Displayed - For Verify Product </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_ProductComparison-VerifyProduct</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:23:50 PM</td>
+					<td class='step-details'>Selecting Product is Displayed - For Verify Product</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:23:50 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage57.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage57.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage57.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='60'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Product Comparison - Verify Product</span>
+						<span class='test-time'>Mar 2, 2018 09:24:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:24:11 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:24:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+48ms</span>
+</div>
+	<div class='test-desc'>Compare for Product is Displayed - For Verify Product </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_ProductComparison-VerifyProduct</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:24:11 PM</td>
+					<td class='step-details'>Compare for Product is Displayed - For Verify Product</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:24:11 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage58.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage58.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage58.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='61'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Product Comparison - Verify Customer View</span>
+						<span class='test-time'>Mar 2, 2018 09:24:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:24:11 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:24:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+58ms</span>
+</div>
+	<div class='test-desc'>Product Detail Page is Displayed - For Verify Customer View </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_ProductComparison-VerifyCustomerView</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:24:11 PM</td>
+					<td class='step-details'>Product Detail Page is Displayed - For Verify Customer View</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:24:11 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage59.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage59.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\ValidMessage59.png'></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='62'>
+					<div class='test-heading'>
+						<span class='test-name'>CC - Product Comparison - Verify Customer View</span>
+						<span class='test-time'>Mar 2, 2018 09:24:15 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 2, 2018 09:24:15 PM</span>
+	<span class='label end-time'>Mar 2, 2018 09:24:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+79ms</span>
+</div>
+	<div class='test-desc'>Product Category Page NOT Displayed - For Verify Customer View </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>CIRCUIT_CITY:Regression</span>
+				<span class='category label white-text'>CC_ProductComparison-VerifyCustomerView</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:24:15 PM</td>
+					<td class='step-details'>Product Category Page NOT Displayed - For Verify Customer View</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>9:24:15 PM</td>
+					<td class='step-details'>ScreenShot<img data-featherlight='F:\Work\Jenkins_GIT\cc_qa\Screenshots\InvalidMessage60.png' width='10%' src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\InvalidMessage60.png' data-src='F:\Work\Jenkins_GIT\cc_qa\Screenshots\InvalidMessage60.png'></td>
 				</tr>
 			</tbody>
 		</table>
@@ -487,6 +3130,610 @@ $24.99
 					<div class='category-heading'>
 						<span class='category-name'>CIRCUIT_CITY:Regression</span>
 						<span class='category-status right'>
+							<span class='label pass'>58</span>
+							<span class='label fail'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 58</span>
+							<span class='label red lighten-1 white-text'>Failed: 3</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:16:22 PM</td>
+										<td class='linked' test-id='1'>CIRCUIT CITY</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:02 PM</td>
+										<td class='linked' test-id='3'>CC-Registration-Field Validation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:03 PM</td>
+										<td class='linked' test-id='4'>CC-Registration-Field Validation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:03 PM</td>
+										<td class='linked' test-id='5'>CC-Registration-Field Validation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:03 PM</td>
+										<td class='linked' test-id='6'>CC-Registration-Field Validation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:03 PM</td>
+										<td class='linked' test-id='7'>CC-Registration-Field Validation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:03 PM</td>
+										<td class='linked' test-id='8'>CC-Registration-Field Validation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:04 PM</td>
+										<td class='linked' test-id='9'>CC-Registration-Invalid Email Id</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:04 PM</td>
+										<td class='linked' test-id='10'>CC-Registration-Invalid Email Id</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:06 PM</td>
+										<td class='linked' test-id='11'>CC-Registration-Invalid Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:06 PM</td>
+										<td class='linked' test-id='12'>CC-Registration-Invalid Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:09 PM</td>
+										<td class='linked' test-id='13'>CC-Registration-Invalid Confirm Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:11 PM</td>
+										<td class='linked' test-id='14'>CC-Registration-Invalid Confirm Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:18:01 PM</td>
+										<td class='linked' test-id='15'>CC-Registration-Registration Success</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:18:45 PM</td>
+										<td class='linked' test-id='16'>CC-SignIn-Verify Login</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:18:45 PM</td>
+										<td class='linked' test-id='17'>CC-SignIn-Verify Login</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:18:46 PM</td>
+										<td class='linked' test-id='18'>CC-SignIn-Verify Login</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:18:46 PM</td>
+										<td class='linked' test-id='19'>CC-SignIn-Verify Login</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:18:46 PM</td>
+										<td class='linked' test-id='20'>CC-SignIn-Verify Login</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:18:46 PM</td>
+										<td class='linked' test-id='21'>CC-SignIn-Verify Login</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:18:52 PM</td>
+										<td class='linked' test-id='22'>CC - SignIn & Forgot Password - Verify Sign In</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:18:58 PM</td>
+										<td class='linked' test-id='23'>CC - SignIn & Forgot Password - Verify Sign In</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:18:58 PM</td>
+										<td class='linked' test-id='24'>CC - SignIn & Forgot Password - Verify Sign In</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:19:03 PM</td>
+										<td class='linked' test-id='25'>CC - SignIn & Forgot Password - Verify Sign In</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:19:16 PM</td>
+										<td class='linked' test-id='26'>CC - SignIn & Forgot Password - Verify Sign In</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:19:45 PM</td>
+										<td class='linked' test-id='27'>CC - SignIn & Forgot Password - Verify Email</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:19:50 PM</td>
+										<td class='linked' test-id='28'>CC - SignIn & Forgot Password - Verify Email</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:19:51 PM</td>
+										<td class='linked' test-id='29'>CC - SignIn & Forgot Password - Verify Email</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:19:51 PM</td>
+										<td class='linked' test-id='30'>CC-SignIn & Forgot Password - Verify Email</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:20:09 PM</td>
+										<td class='linked' test-id='31'>CC - SignIn & Forgot Password - Verify Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:20:15 PM</td>
+										<td class='linked' test-id='32'>CC - SignIn & Forgot Password - Verify Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:20:15 PM</td>
+										<td class='linked' test-id='33'>CC - SignIn & Forgot Password - Verify Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:20:16 PM</td>
+										<td class='linked' test-id='34'>CC-SignIn-Verify Password</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:20:33 PM</td>
+										<td class='linked' test-id='35'>CC - SignIn & Forgot Password - Verify Forgot Password Link</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:20:41 PM</td>
+										<td class='linked' test-id='36'>CC - SignIn & Forgot Password - Verify Forgot Password Link</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:20:41 PM</td>
+										<td class='linked' test-id='37'>CC - SignIn & Forgot Password - Verify Forgot Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:20:44 PM</td>
+										<td class='linked' test-id='38'>CC - SignIn & Forgot Password - Verify Forgot Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:20:48 PM</td>
+										<td class='linked' test-id='39'>CC - Search - Verify Search Product</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:20:51 PM</td>
+										<td class='linked' test-id='40'>CC - Search - Verify NO Search Product</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:20:55 PM</td>
+										<td class='linked' test-id='41'>CC - Search - Verify Already Searched Product</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:21:07 PM</td>
+										<td class='linked' test-id='42'>CC - Search - Verify Search With Product Name</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:21:19 PM</td>
+										<td class='linked' test-id='43'>CC - Search - Verify Search With Item No</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:21:33 PM</td>
+										<td class='linked' test-id='44'>CC - Search - Verify Search With Keyword</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:21:46 PM</td>
+										<td class='linked' test-id='45'>CC - Search - Verify Search With Description</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:21:59 PM</td>
+										<td class='linked' test-id='46'>CC - Search - Verify Search With Category Name</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:22:14 PM</td>
+										<td class='linked' test-id='47'>CC - Search - Verify Search With Relevance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:22:28 PM</td>
+										<td class='linked' test-id='48'>CC - Search - Verify Search Result Page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:22:32 PM</td>
+										<td class='linked' test-id='49'>CC - Search - Verify Search With Invalid Input</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:22:36 PM</td>
+										<td class='linked' test-id='50'>CC - Search - Verify Search With Invalid Input - Special Character</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:22:51 PM</td>
+										<td class='linked' test-id='51'>CC - Search - Verify Confined Search</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:23:04 PM</td>
+										<td class='linked' test-id='52'>CC - Search - Verify Spell Checker</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:23:15 PM</td>
+										<td class='linked' test-id='53'>CC - Search - Verify Category Page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:23:20 PM</td>
+										<td class='linked' test-id='54'>CC - Search - Verify Type Ahead</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:23:31 PM</td>
+										<td class='linked' test-id='55'>CC - Search - Verify Sorting Search</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:23:42 PM</td>
+										<td class='linked' test-id='56'>CC - Search - Verify Items Per Page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:23:42 PM</td>
+										<td class='linked' test-id='57'>CC - Product Comparison - Verify Product</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:23:45 PM</td>
+										<td class='linked' test-id='58'>CC - Product Comparison - Verify Product</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:23:50 PM</td>
+										<td class='linked' test-id='59'>CC - Product Comparison - Verify Product</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:24:11 PM</td>
+										<td class='linked' test-id='60'>CC - Product Comparison - Verify Product</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:24:11 PM</td>
+										<td class='linked' test-id='61'>CC - Product Comparison - Verify Customer View</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:24:15 PM</td>
+										<td class='linked' test-id='62'>CC - Product Comparison - Verify Customer View</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Registration_ValidationFields</span>
+						<span class='category-status right'>
+							<span class='label pass'>6</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 6</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:17:02 PM</td>
+										<td class='linked' test-id='3'>CC-Registration-Field Validation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:03 PM</td>
+										<td class='linked' test-id='4'>CC-Registration-Field Validation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:03 PM</td>
+										<td class='linked' test-id='5'>CC-Registration-Field Validation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:03 PM</td>
+										<td class='linked' test-id='6'>CC-Registration-Field Validation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:03 PM</td>
+										<td class='linked' test-id='7'>CC-Registration-Field Validation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:03 PM</td>
+										<td class='linked' test-id='8'>CC-Registration-Field Validation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Registration-InvalidEmailId</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:17:04 PM</td>
+										<td class='linked' test-id='9'>CC-Registration-Invalid Email Id</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:04 PM</td>
+										<td class='linked' test-id='10'>CC-Registration-Invalid Email Id</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Registration-InvalidPassword</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:17:06 PM</td>
+										<td class='linked' test-id='11'>CC-Registration-Invalid Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:06 PM</td>
+										<td class='linked' test-id='12'>CC-Registration-Invalid Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Registration-InvalidConfirmPassword</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:17:09 PM</td>
+										<td class='linked' test-id='13'>CC-Registration-Invalid Confirm Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:17:11 PM</td>
+										<td class='linked' test-id='14'>CC-Registration-Invalid Confirm Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC-Registration-RegistrationSuccess</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:18:01 PM</td>
+										<td class='linked' test-id='15'>CC-Registration-Registration Success</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Registration_VerifyLogin</span>
+						<span class='category-status right'>
+							<span class='label pass'>6</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 6</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:18:45 PM</td>
+										<td class='linked' test-id='16'>CC-SignIn-Verify Login</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:18:45 PM</td>
+										<td class='linked' test-id='17'>CC-SignIn-Verify Login</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:18:46 PM</td>
+										<td class='linked' test-id='18'>CC-SignIn-Verify Login</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:18:46 PM</td>
+										<td class='linked' test-id='19'>CC-SignIn-Verify Login</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:18:46 PM</td>
+										<td class='linked' test-id='20'>CC-SignIn-Verify Login</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:18:46 PM</td>
+										<td class='linked' test-id='21'>CC-SignIn-Verify Login</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_SignIn&ForgotPassword-VerifySignIn</span>
+						<span class='category-status right'>
 							<span class='label pass'>5</span>
 						</span>
 					</div>
@@ -508,28 +3755,28 @@ $24.99
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 1, 2018 04:18:45 PM</td>
-										<td class='linked' test-id='1'>CIRCUIT CITY</td>
+										<td>Mar 2, 2018 09:18:52 PM</td>
+										<td class='linked' test-id='22'>CC - SignIn & Forgot Password - Verify Sign In</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 1, 2018 04:19:43 PM</td>
-										<td class='linked' test-id='3'>CIRCUIT CITY - PROMOTIONS</td>
+										<td>Mar 2, 2018 09:18:58 PM</td>
+										<td class='linked' test-id='23'>CC - SignIn & Forgot Password - Verify Sign In</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 1, 2018 04:19:54 PM</td>
-										<td class='linked' test-id='4'>CIRCUIT CITY - PROMOTIONS</td>
+										<td>Mar 2, 2018 09:18:58 PM</td>
+										<td class='linked' test-id='24'>CC - SignIn & Forgot Password - Verify Sign In</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 1, 2018 04:19:57 PM</td>
-										<td class='linked' test-id='5'>CIRCUIT CITY - PROMOTIONS</td>
+										<td>Mar 2, 2018 09:19:03 PM</td>
+										<td class='linked' test-id='25'>CC - SignIn & Forgot Password - Verify Sign In</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 1, 2018 04:20:02 PM</td>
-										<td class='linked' test-id='6'>CIRCUIT CITY - PROMOTIONS</td>
+										<td>Mar 2, 2018 09:19:16 PM</td>
+										<td class='linked' test-id='26'>CC - SignIn & Forgot Password - Verify Sign In</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -539,7 +3786,825 @@ $24.99
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>CIRCUITCITY-PROMOTIONS</span>
+						<span class='category-name'>CC_SignIn&ForgotPassword-VerifyEmail</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:19:45 PM</td>
+										<td class='linked' test-id='27'>CC - SignIn & Forgot Password - Verify Email</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:19:50 PM</td>
+										<td class='linked' test-id='28'>CC - SignIn & Forgot Password - Verify Email</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:19:51 PM</td>
+										<td class='linked' test-id='29'>CC - SignIn & Forgot Password - Verify Email</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:19:51 PM</td>
+										<td class='linked' test-id='30'>CC-SignIn & Forgot Password - Verify Email</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_SignIn&ForgotPassword-VerifyPassword</span>
+						<span class='category-status right'>
+							<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:20:09 PM</td>
+										<td class='linked' test-id='31'>CC - SignIn & Forgot Password - Verify Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:20:15 PM</td>
+										<td class='linked' test-id='32'>CC - SignIn & Forgot Password - Verify Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:20:15 PM</td>
+										<td class='linked' test-id='33'>CC - SignIn & Forgot Password - Verify Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_SignIn-VerifyPassword</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:20:16 PM</td>
+										<td class='linked' test-id='34'>CC-SignIn-Verify Password</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_SignIn&ForgotPassword-VerifyForgotPasswordLink</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:20:33 PM</td>
+										<td class='linked' test-id='35'>CC - SignIn & Forgot Password - Verify Forgot Password Link</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:20:41 PM</td>
+										<td class='linked' test-id='36'>CC - SignIn & Forgot Password - Verify Forgot Password Link</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_SignIn&ForgotPassword-VerifyForgotPassword</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:20:41 PM</td>
+										<td class='linked' test-id='37'>CC - SignIn & Forgot Password - Verify Forgot Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:20:44 PM</td>
+										<td class='linked' test-id='38'>CC - SignIn & Forgot Password - Verify Forgot Password</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifySearchProduct</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:20:48 PM</td>
+										<td class='linked' test-id='39'>CC - Search - Verify Search Product</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifyNOSearchProduct</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:20:51 PM</td>
+										<td class='linked' test-id='40'>CC - Search - Verify NO Search Product</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifyAlreadySearchedProduct</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:20:55 PM</td>
+										<td class='linked' test-id='41'>CC - Search - Verify Already Searched Product</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifySearchWithProductName</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:21:07 PM</td>
+										<td class='linked' test-id='42'>CC - Search - Verify Search With Product Name</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifySearchWithItemNo</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:21:19 PM</td>
+										<td class='linked' test-id='43'>CC - Search - Verify Search With Item No</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifySearchWithKeyword</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:21:33 PM</td>
+										<td class='linked' test-id='44'>CC - Search - Verify Search With Keyword</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifySearchWithDescription</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:21:46 PM</td>
+										<td class='linked' test-id='45'>CC - Search - Verify Search With Description</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifySearchWithCategoryName</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:21:59 PM</td>
+										<td class='linked' test-id='46'>CC - Search - Verify Search With Category Name</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifySearchWithRelevance</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:22:14 PM</td>
+										<td class='linked' test-id='47'>CC - Search - Verify Search With Relevance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifySearchResultPage</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:22:28 PM</td>
+										<td class='linked' test-id='48'>CC - Search - Verify Search Result Page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifySearchSearchWithInvalidInput</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:22:32 PM</td>
+										<td class='linked' test-id='49'>CC - Search - Verify Search With Invalid Input</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifySearchSearchWithInvalidInput-SpecialCharacter</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:22:36 PM</td>
+										<td class='linked' test-id='50'>CC - Search - Verify Search With Invalid Input - Special Character</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifyConfinedSearch</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:22:51 PM</td>
+										<td class='linked' test-id='51'>CC - Search - Verify Confined Search</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifySpellChecker</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:23:04 PM</td>
+										<td class='linked' test-id='52'>CC - Search - Verify Spell Checker</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifyCategoryPage</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:23:15 PM</td>
+										<td class='linked' test-id='53'>CC - Search - Verify Category Page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifyTypeAhead</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:23:20 PM</td>
+										<td class='linked' test-id='54'>CC - Search - Verify Type Ahead</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifySortingSearch</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:23:31 PM</td>
+										<td class='linked' test-id='55'>CC - Search - Verify Sorting Search</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_Search-VerifyItemsPerPage</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:23:42 PM</td>
+										<td class='linked' test-id='56'>CC - Search - Verify Items Per Page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_ProductComparison-VerifyProduct</span>
 						<span class='category-status right'>
 							<span class='label pass'>4</span>
 						</span>
@@ -562,24 +4627,64 @@ $24.99
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 1, 2018 04:19:43 PM</td>
-										<td class='linked' test-id='3'>CIRCUIT CITY - PROMOTIONS</td>
+										<td>Mar 2, 2018 09:23:42 PM</td>
+										<td class='linked' test-id='57'>CC - Product Comparison - Verify Product</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 1, 2018 04:19:54 PM</td>
-										<td class='linked' test-id='4'>CIRCUIT CITY - PROMOTIONS</td>
+										<td>Mar 2, 2018 09:23:45 PM</td>
+										<td class='linked' test-id='58'>CC - Product Comparison - Verify Product</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 1, 2018 04:19:57 PM</td>
-										<td class='linked' test-id='5'>CIRCUIT CITY - PROMOTIONS</td>
+										<td>Mar 2, 2018 09:23:50 PM</td>
+										<td class='linked' test-id='59'>CC - Product Comparison - Verify Product</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 1, 2018 04:20:02 PM</td>
-										<td class='linked' test-id='6'>CIRCUIT CITY - PROMOTIONS</td>
+										<td>Mar 2, 2018 09:24:11 PM</td>
+										<td class='linked' test-id='60'>CC - Product Comparison - Verify Product</td>
 										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>CC_ProductComparison-VerifyCustomerView</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 2, 2018 09:24:11 PM</td>
+										<td class='linked' test-id='61'>CC - Product Comparison - Verify Customer View</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2018 09:24:15 PM</td>
+										<td class='linked' test-id='62'>CC - Product Comparison - Verify Customer View</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -598,6 +4703,100 @@ $24.99
 	</div>
 </div>
 <!-- category view -->
+<div id='author-view' class='view hide'>
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Authors' title='Search Authors'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Authors...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Authors</h5>
+                <ul id='author-collection' class='author-collection'>
+
+                        <li class='author displayed active'>
+                            <div class='author-heading'>
+                                <span class='author-name'>CommonUtils.getUserName()</span>
+                                <span class='author-status right'>
+                                        <span class='label pass'>6</span>
+						        </span>
+                            </div>
+                            <div class='author-content hide'>
+                                <div class='author-status-counts'>
+                                    <span class='label green accent-4 white-text'>Passed: 6</span>
+                                    
+                                    
+                                </div>
+
+                                <div class='author-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Mar 2, 2018 09:17:02 PM</td>
+                                                <td class='linked' test-id='3'>CC-Registration-Field Validation</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mar 2, 2018 09:17:03 PM</td>
+                                                <td class='linked' test-id='4'>CC-Registration-Field Validation</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mar 2, 2018 09:17:03 PM</td>
+                                                <td class='linked' test-id='5'>CC-Registration-Field Validation</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mar 2, 2018 09:17:03 PM</td>
+                                                <td class='linked' test-id='6'>CC-Registration-Field Validation</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mar 2, 2018 09:17:03 PM</td>
+                                                <td class='linked' test-id='7'>CC-Registration-Field Validation</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mar 2, 2018 09:17:03 PM</td>
+                                                <td class='linked' test-id='8'>CC-Registration-Field Validation</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='author-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -607,31 +4806,31 @@ $24.99
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>62</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>11</div>
+					<div class='panel-lead'>127</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 1, 2018 04:18:45 PM</div>
+					<div class='panel-lead'>Mar 2, 2018 09:16:22 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 1, 2018 04:20:05 PM</div>
+			 		<div class='panel-lead'>Mar 2, 2018 09:25:18 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>80,366ms</div>
+					<div class='panel-lead'>535,600ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -647,14 +4846,200 @@ $24.99
 						</tr>
 						<tr>
 							<td>CIRCUIT_CITY:Regression</td>
+							<td>58</td>
+							<td>3</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Registration_ValidationFields</td>
+							<td>6</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Registration-InvalidEmailId</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Registration-InvalidPassword</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Registration-InvalidConfirmPassword</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC-Registration-RegistrationSuccess</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Registration_VerifyLogin</td>
+							<td>6</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_SignIn&ForgotPassword-VerifySignIn</td>
 							<td>5</td>
 							<td>0</td>
 							<td>0</td>
 						</tr>
 						<tr>
-							<td>CIRCUITCITY-PROMOTIONS</td>
+							<td>CC_SignIn&ForgotPassword-VerifyEmail</td>
+							<td>3</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_SignIn&ForgotPassword-VerifyPassword</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_SignIn-VerifyPassword</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_SignIn&ForgotPassword-VerifyForgotPasswordLink</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_SignIn&ForgotPassword-VerifyForgotPassword</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifySearchProduct</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifyNOSearchProduct</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifyAlreadySearchedProduct</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifySearchWithProductName</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifySearchWithItemNo</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifySearchWithKeyword</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifySearchWithDescription</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifySearchWithCategoryName</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifySearchWithRelevance</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifySearchResultPage</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifySearchSearchWithInvalidInput</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifySearchSearchWithInvalidInput-SpecialCharacter</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifyConfinedSearch</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifySpellChecker</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifyCategoryPage</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifyTypeAhead</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifySortingSearch</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_Search-VerifyItemsPerPage</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_ProductComparison-VerifyProduct</td>
 							<td>4</td>
 							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>CC_ProductComparison-VerifyCustomerView</td>
+							<td>1</td>
+							<td>1</td>
 							<td>0</td>
 						</tr>
 					</table>
@@ -670,22 +5055,22 @@ $24.99
 
 		<script>
 			var statusGroup = {
-				passParent: 6,
-				failParent: 0,
+				passParent: 59,
+				failParent: 3,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 3,
 				
-				passChild: 11,
-				failChild: 0,
+				passChild: 118,
+				failChild: 5,
 				fatalChild: 0,
-				errorChild: 0,
-				warningChild: 0,
+				errorChild: 2,
+				warningChild: 2,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 9,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
