@@ -47,6 +47,7 @@ public class HomePage extends Browser {
 //		smartRoom(); //TC-14
 //		featuredProduct(); //TC-15 
 //		HP_discoverMore();
+		ShopAllTopCategories(); //TC 25
 //		bestSeller(); //TC -26
 		shopNow_FeaturedProduct(); //TC 27
 //		Thread.sleep(3000);
@@ -632,6 +633,30 @@ public class HomePage extends Browser {
 			System.out.println("Discover More - Failed");
 		}
 	 }
+	 //CC 25
+	   public void ShopAllTopCategories() throws Exception
+	   {
+	     Thread.sleep(5000);
+	     
+	     if (findTheElement(
+	       "id=allDepartmentsButton2").isDisplayed()) {
+	      rpt.createTest("CC - Home Page - Verify Shop All Top Categories",
+	        "Shop All Top Categories Displayed - For Verify Shop All Top Categories");
+	      rpt.Pass("Discover MoreDisplayed - For Verify Discover More");
+	      rpt.Category("CC_Home Page - Verify Shop All Top Categories");
+	      String path = rpt.CaptureScreen(browser, "ValidMessage");
+	      rpt.imgPathPass(path);
+	      click("id=allDepartmentsButton2");
+
+	     } else {
+	      rpt.createTest("CC - Home Page - Verify Shop All Top Categories",
+	        " Shop All Top Categories buttonis NOT Displayed - For Verify Shop All Top Categories");
+	      rpt.Fail("Shop All Top Categories is NOT Displayed - For Verify Shop All Top Categories");
+	      rpt.Category("CC_Home Page - Verify Shop All Top Categories");
+	      String path = rpt.CaptureScreen(browser, "InvalidMessage");
+	      rpt.imgPathPass(path);
+	     }
+	   }
 	 
 	 //CC-TC 26
 	 public void bestSeller() throws Exception
