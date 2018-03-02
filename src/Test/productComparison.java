@@ -691,7 +691,7 @@ public class productComparison extends Browser
 
 //		Element = findTheElement("xpath=//div[@class='owl-item'][1]//label[contains(text(),'Compare')]");
 //		jse.executeScript("arguments[0].scrollIntoView();", Element);
-		jse.executeScript("window.scrollBy(0,1500)");
+		jse.executeScript("window.scrollBy(0,1000)");
 		
 		Thread.sleep(4000);
 		//click("xpath=//*[@id='compare_3074457345616688890']/label"); //dell product
@@ -776,7 +776,7 @@ public class productComparison extends Browser
 
 //		Element = findTheElement("xpath=//div[@class='owl-item'][2]//label[contains(text(),'Compare')]");
 //		jse.executeScript("arguments[0].scrollIntoView();", Element);
-		jse.executeScript("window.scrollBy(0,1500)");
+		jse.executeScript("window.scrollBy(0,1000)");
 		
 		Thread.sleep(4000);
 		//click("xpath=//*[@id='compare_3074457345616688890']/label"); //dell product
@@ -895,7 +895,7 @@ public class productComparison extends Browser
 
 //		Element = findTheElement("xpath=//div[@class='owl-item'][2]//label[contains(text(),'Compare')]");
 //		jse.executeScript("arguments[0].scrollIntoView();", Element);
-		jse.executeScript("window.scrollBy(0,1500)");
+		jse.executeScript("window.scrollBy(0,1000)");
 		Thread.sleep(4000);
 		click("xpath=//div[@class='owl-item'][1]//label[contains(text(),'Compare')]");
 		//click("xpath=//*[@id='compare_3074457345616727948']/label");
@@ -1004,7 +1004,7 @@ public class productComparison extends Browser
 
 //		Element = findTheElement("xpath=//li[1]/.//div[@class='product_name']");
 //		jse.executeScript("arguments[0].scrollIntoView();", Element);
-		jse.executeScript("window.scrollBy(0,1500)");
+		jse.executeScript("window.scrollBy(0,1000)");
 		
 		Thread.sleep(4000);
 		//click("xpath=//*[@id='catalogEntry_img3074457345616727848']");
@@ -1032,7 +1032,7 @@ public class productComparison extends Browser
 
 //		Element = findTheElement("xpath=//div[@class='owl-item'][1]//label[contains(text(),'Compare')]");
 //		jse.executeScript("arguments[0].scrollIntoView();", Element);
-		jse.executeScript("window.scrollBy(0,1500)");
+		jse.executeScript("window.scrollBy(0,1000)");
 		
 		Thread.sleep(4000);
 		click("xpath=//div[@class='owl-item'][1]//label[contains(text(),'Compare')]");
@@ -1123,7 +1123,7 @@ public class productComparison extends Browser
 		
 //		Element = findTheElement("xpath=//li[1]/.//div[@class='product_name']");
 //		jse.executeScript("arguments[0].scrollIntoView();", Element);
-		jse.executeScript("window.scrollBy(0,1500)");
+		jse.executeScript("window.scrollBy(0,1000)");
 		
 		Thread.sleep(4000);
 		//click("xpath=//*[@id='catalogEntry_img3074457345616727848']");
@@ -1151,7 +1151,7 @@ public class productComparison extends Browser
 		
 //		Element = findTheElement("xpath=//div[@class='owl-item'][1]//label[contains(text(),'Compare')]");
 //		jse.executeScript("arguments[0].scrollIntoView();", Element);
-		jse.executeScript("window.scrollBy(0,1500)");
+		jse.executeScript("window.scrollBy(0,1000)");
 		Thread.sleep(4000);
 		click("xpath=//div[@class='owl-item'][1]//label[contains(text(),'Compare')]");
 		click("xpath=//div[@class='owl-item'][2]//label[contains(text(),'Compare')]");
@@ -1281,7 +1281,7 @@ public class productComparison extends Browser
 
 //		Element = findTheElement("xpath=//li[1]/.//div[@class='product_name']");
 //		jse.executeScript("arguments[0].scrollIntoView();", Element);
-		jse.executeScript("window.scrollBy(0,1500)");
+		jse.executeScript("window.scrollBy(0,1000)");
 		Thread.sleep(4000);
 		//click("xpath=//*[@id='catalogEntry_img3074457345616727848']");
 		if(findTheElement("xpath=//li[1]/.//div[@class='product_name']").isDisplayed())
@@ -1308,7 +1308,7 @@ public class productComparison extends Browser
 
 //		Element = findTheElement("xpath=//div[@class='owl-item'][1]//label[contains(text(),'Compare')]");
 //		jse.executeScript("arguments[0].scrollIntoView();", Element);
-		jse.executeScript("window.scrollBy(0,1500)");
+		jse.executeScript("window.scrollBy(0,1000)");
 		Thread.sleep(4000);
 		click("xpath=//div[@class='owl-item'][1]//label[contains(text(),'Compare')]");
 		click("xpath=//div[@class='owl-item'][2]//label[contains(text(),'Compare')]");
@@ -1431,7 +1431,7 @@ public class productComparison extends Browser
 
 //		Element = findTheElement("xpath=//li[1]/.//div[@class='product_name']");
 //		jse.executeScript("arguments[0].scrollIntoView();", Element);
-		jse.executeScript("window.scrollBy(0,1500)");
+		jse.executeScript("window.scrollBy(0,1000)");
 		Thread.sleep(4000);
 		//click("xpath=//*[@id='catalogEntry_img3074457345616727848']");
 		if(findTheElement("xpath=//li[1]/.//div[@class='product_name']").isDisplayed())
@@ -1458,7 +1458,7 @@ public class productComparison extends Browser
 
 //		Element = findTheElement("xpath=//div[@class='owl-item'][1]//label[contains(text(),'Compare')]");
 //		jse.executeScript("arguments[0].scrollIntoView();", Element);
-		jse.executeScript("window.scrollBy(0,1500)");
+		jse.executeScript("window.scrollBy(0,1000)");
 		Thread.sleep(4000);
 		click("xpath=//div[@class='owl-item'][1]//label[contains(text(),'Compare')]");
 		click("xpath=//div[@class='owl-item'][2]//label[contains(text(),'Compare')]");
@@ -1567,7 +1567,7 @@ public class productComparison extends Browser
 		
 //		Element = findTheElement("xpath=//div[@class='owl-item'][1]//label[contains(text(),'Compare')]");
 //		jse.executeScript("arguments[0].scrollIntoView();", Element);
-		jse.executeScript("window.scrollBy(0,1500)");
+		jse.executeScript("window.scrollBy(0,1000)");
 		
 		Thread.sleep(4000);
 		click("xpath=//div[@class='owl-item'][1]//label[contains(text(),'Compare')]"); //dell product
