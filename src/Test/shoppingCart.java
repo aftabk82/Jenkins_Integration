@@ -405,7 +405,7 @@ public class shoppingCart extends Browser
 	         String path = rpt.CaptureScreen(browser, "InvalidMessage");
 	         rpt.imgPathFail(path);
 		 }
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		click("id=GotoCartButton2"); //view cart
 		Thread.sleep(3000);
 		if(findTheElement("xpath=//div[@id='orderItemDisplay']/div/div/div/h1").isDisplayed())
@@ -532,7 +532,7 @@ public class shoppingCart extends Browser
 //		scroll.sendKeys(Keys.PAGE_DOWN);
 //		Thread.sleep(5000);
 		Thread.sleep(3000);
-		 WebElement Element = findTheElement("xpath=html/body/div[10]/div/div[3]/div[3]/div/h2");
+		 WebElement Element = findTheElement("css=div.recomm_access");
 	     JavascriptExecutor jse = (JavascriptExecutor)browser;
 	      jse.executeScript("arguments[0].scrollIntoView();", Element);
 	      Thread.sleep(3000);
@@ -606,10 +606,11 @@ public class shoppingCart extends Browser
 	         String path = rpt.CaptureScreen(browser, "InvalidMessage");
 	         rpt.imgPathFail(path);
 		 }
-		 Thread.sleep(5000);
+		 Thread.sleep(6000);
 		 //click("id=MiniShopCartCloseButton_2"); //close
 		 //Thread.sleep(5000);
-		 click("xpath=//*[@id='minishopcart_total']"); //mini shop button
+		 //click("xpath=//*[@id='minishopcart_total']"); //mini shop button
+		 click("id=widget_minishopcart");
 			Thread.sleep(3000);
 //			if(findTheElement("xpath=//*[@id='cartDropdown']/div[1]/div[2]/span[1]").isDisplayed())
 //			{
@@ -1561,6 +1562,7 @@ public class shoppingCart extends Browser
 	//47
 	public void checkOut()throws Exception 
 	{
+		Thread.sleep(3000);
 		//click("link=READY TO CHECKOUT");
 		if(findTheElement("link=READY TO CHECKOUT").isDisplayed())
 		{
@@ -1637,6 +1639,8 @@ public class shoppingCart extends Browser
 		sendKeys("id=WC_ShippingAddressForm_AddressEntryForm_FormInput_phone1_1",phoneNo);
 		Thread.sleep(2000);
 		click("id=summaryButton"); //continue
+		Thread.sleep(2000);
+		click("link=Back to Cart"); //back to cart
 		
 		
 		
