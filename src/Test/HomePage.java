@@ -41,12 +41,14 @@ public class HomePage extends Browser {
 //		Thread.sleep(3000);
 //		HP_ShopNow_FeaturedProduct(); //TO CHECK 
 //		Thread.sleep(3000);
-		HP_Discover_LearnMore();
+//		HP_Discover_LearnMore();
 //		Thread.sleep(3000);
 //		customiseRoom(); //TC-13
 //		smartRoom(); //TC-14
-//		featuredProduct(); //TC-15 TO ASK
+//		featuredProduct(); //TC-15 
 //		HP_discoverMore();
+//		bestSeller(); //TC -26
+		shopNow_FeaturedProduct(); //TC 27
 //		Thread.sleep(3000);
 //		HP_Chat();
 //		Thread.sleep(3000);
@@ -468,36 +470,27 @@ public class HomePage extends Browser {
 	 //CC-15
 	 public void featuredProduct()throws Exception
 	 {
-		 Map<String,String> fields= new HashMap<String,String>();
-	   	  fields.put("Name", "");
-	   	  fields.put("Price", "");
-	   	  fields.put("Rating", "//section[@id='pr-category-snippets-JAB1009860000102']/section/section/div/div/div[3]");
-	   	  fields.put("Shop Now", "//a[contains(text(),'Shop Now')]");
-	   	  fields.put("Carosel", "//a[contains(@href, '#')]");
-//	   	  fields.put("Save $250 on Apple 13.3 MacBook Pro", ".//*[@id='deal_of_the_day']/a/div[2]/p[2]");
-//	   	  fields.put("Sign In", "//*[@id='Header_GlobalLogin_signInQuickLink']");
-//	   	   fields.put("WishList", "//*[@id='wishListQuickLink_alt']");
-//	   	   fields.put("Cart", "//*[@id='widget_minishopcart']");
-	   		
-	   		 for(Map.Entry<String, String> field : fields.entrySet() )
-	   		 {
-	   			 if (findTheElement("xpath=" + field.getValue() + "").isDisplayed())
-	   			 {
-	   				 rpt.createTest("CIRCUIT CITY - Verify Featured Product", "Featured Product Content :"+field.getKey()+" Displayed ");
-	   		         rpt.Pass("Featured Product Content :"+field.getKey()+" Displayed ");
-	   		         rpt.Category("CIRCUIT CITY - Verify Featured Product");
-	   		         String path = rpt.CaptureScreen(browser, "ValidMessage");
-	   		         rpt.imgPathPass(path);
-	   			 }
-	   			 else
-	   			 {
-	   				 rpt.createTest("CIRCUIT CITY - Verify Featured Product", "Featured Product Content :"+field.getKey()+" NOT Displayed");
-	   		         rpt.Fail("Featured Product Content :"+field.getKey()+" NOT Displayed");
-	   		         rpt.Category("CIRCUIT CITY - Verify Featured Product");
-	   		         String path = rpt.CaptureScreen(browser, "InvalidMessage");
-	   		         rpt.imgPathFail(path);
-	   			 }
-	   		 }
+		 String product=findTheElement("css=div.carouselWrapper").getText();
+		 Thread.sleep(2000);
+		 System.out.println(product);
+		 if(product!=null)
+		 {
+			
+				 rpt.createTest("CIRCUIT CITY - Verify Featured Product", "Featured Product Section is displayed properly");
+		         rpt.Pass("Featured Product Section is displayed properly : " +product);
+		         rpt.Category("CIRCUIT CITY - Verify Featured Product");
+		         String path = rpt.CaptureScreen(browser, "ValidMessage");
+		         rpt.imgPathPass(path);
+			}
+			else
+			{
+				
+				rpt.createTest("CIRCUIT CITY - Verify Featured Productr", "Featured Product NOT displayed properly");
+		         rpt.Fail("Featured Product NOT displayed properly");
+		         rpt.Category("CIRCUIT CITY - Verify Featured Product");
+		         String path = rpt.CaptureScreen(browser, "InvalidMessage");
+		         rpt.imgPathFail(path);
+			}
 	 }
 	 
 	 //CC_HP_016 TO CHECK 
@@ -570,19 +563,19 @@ public class HomePage extends Browser {
 		  if (findTheElement(
 				  "xpath=//button[@class='learn-more'][1]")
 					.isDisplayed()) {
-				rpt.createTest("CC - Home Page - Verify Discover � Learn More",
-						"Discover � Learn More Displayed - For Verify Discover � Learn More ");
-				rpt.Pass("Discover � Learn More Displayed - For Verify Discover � Learn More ");
-				rpt.Category("CC_Home Page - Verify Discover � Learn More ");
+				rpt.createTest("CC - Home Page - Verify Discover ï¿½ Learn More",
+						"Discover ï¿½ Learn More Displayed - For Verify Discover ï¿½ Learn More ");
+				rpt.Pass("Discover ï¿½ Learn More Displayed - For Verify Discover ï¿½ Learn More ");
+				rpt.Category("CC_Home Page - Verify Discover ï¿½ Learn More ");
 				String path = rpt.CaptureScreen(browser, "ValidMessage");
 				rpt.imgPathPass(path);
 				click("xpath=//button[@class='learn-more'][1]");
 
 			} else {
-				rpt.createTest("CC - Home Page - Verify Discover � Learn More ",
-						" Discover � Learn More Page is NOT Displayed - For Verify Discover � Learn More ");
-				rpt.Fail("Discover � Learn More is NOT Displayed - For Verify Discover � Learn More ");
-				rpt.Category("CC_Home Page - Verify Discover � Learn More ");
+				rpt.createTest("CC - Home Page - Verify Discover ï¿½ Learn More ",
+						" Discover ï¿½ Learn More Page is NOT Displayed - For Verify Discover ï¿½ Learn More ");
+				rpt.Fail("Discover ï¿½ Learn More is NOT Displayed - For Verify Discover ï¿½ Learn More ");
+				rpt.Category("CC_Home Page - Verify Discover ï¿½ Learn More ");
 				String path = rpt.CaptureScreen(browser, "InvalidMessage");
 				rpt.imgPathFail(path);
 			}
@@ -610,7 +603,7 @@ public class HomePage extends Browser {
 		 if (findTheElement(
 				 "xpath=/html/body/div[3]/div/div[1]/div[2]/div[1]/div[7]/div/div/div/div/div/a")
 					.isDisplayed()) {
-				rpt.createTest("CC - Home Page - Verify Discover � More",
+				rpt.createTest("CC - Home Page - Verify Discover ï¿½ More",
 						"Discover More Displayed - For Verify Discover More");
 				rpt.Pass("Discover MoreDisplayed - For Verify Discover More");
 				rpt.Category("CC_Home Page - Verify Discover More");
@@ -639,7 +632,57 @@ public class HomePage extends Browser {
 			System.out.println("Discover More - Failed");
 		}
 	 }
-	 //CC-TC 24
+	 
+	 //CC-TC 26
+	 public void bestSeller() throws Exception
+	 {
+		 String product=findTheElement("css=div.carouselWrapper").getText();
+		 Thread.sleep(2000);
+		 System.out.println(product);
+		 if(product!=null)
+		 {
+			
+				 rpt.createTest("CIRCUIT CITY - Verify Best Seller", "Best Seller Section is displayed properly");
+		         rpt.Pass("Best Seller Section is displayed properly : " +product);
+		         rpt.Category("CIRCUIT CITY - Verify Best Seller");
+		         String path = rpt.CaptureScreen(browser, "ValidMessage");
+		         rpt.imgPathPass(path);
+			}
+			else
+			{
+				
+				rpt.createTest("CIRCUIT CITY - Verify Best Seller", "Best Seller Section NOT displayed properly");
+		         rpt.Fail("Best Seller Section NOT displayed properly");
+		         rpt.Category("CIRCUIT CITY - Verify Best Seller");
+		         String path = rpt.CaptureScreen(browser, "InvalidMessage");
+		         rpt.imgPathFail(path);
+			}
+	 }
+	 //TC 27
+	 public void shopNow_FeaturedProduct() throws Exception
+	 {
+//		 String product=findTheElement("css=div.carouselWrapper").getText();
+//		 Thread.sleep(2000);
+//		 System.out.println(product);
+		 if(findTheElement("css=div.button primary").isDisplayed())
+		 {
+			 	click("css=div.button primary");
+				 rpt.createTest("CIRCUIT CITY - Verify Best Seller", "Best Seller Section is displayed properly");
+		         rpt.Pass("Best Seller Section is displayed properly  ");
+		         rpt.Category("CIRCUIT CITY - Verify Best Seller");
+		         String path = rpt.CaptureScreen(browser, "ValidMessage");
+		         rpt.imgPathPass(path);
+			}
+			else
+			{
+				
+				rpt.createTest("CIRCUIT CITY - Verify Best Seller", "Best Seller Section NOT displayed properly");
+		         rpt.Fail("Best Seller Section NOT displayed properly");
+		         rpt.Category("CIRCUIT CITY - Verify Best Seller");
+		         String path = rpt.CaptureScreen(browser, "InvalidMessage");
+		         rpt.imgPathFail(path);
+			}
+	 }
 	 //CC_HP_033 - Chat
 	 public void HP_Chat() throws Exception
 	 {
@@ -2228,7 +2271,7 @@ public class HomePage extends Browser {
 
 				String NewWindowTitle = Browser.getTitle();
 
-				if (NewWindowTitle.equals("Circuit City (@circuitcity) � Instagram photos and videos"))
+				if (NewWindowTitle.equals("Circuit City (@circuitcity) ï¿½ Instagram photos and videos"))
 				{
 					System.out
 							.println("Footer-InstagramLink is navigating to corresponding Page");
